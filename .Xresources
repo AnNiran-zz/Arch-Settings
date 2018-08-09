@@ -1,0 +1,89 @@
+! URxvt Color settings
+URxvt*depth: 32
+!URxvt*foreground: #d2bc9d
+URxvt*foreground: #e7caa1
+!URxvt*foreground: #f9dbb1
+URxvt*background: #312f2e
+URxvt*geometry: 120x50
+URxvt*scrollBar: false
+
+URxvt*font: xft:Source Code Pro:size=10
+URxvt*boldFont: xft:Source Code Pro:size=10
+
+URxvt*cursorColor: #49b4bd
+URxvt*urllauncher: /usr/share/applications/chromium
+URxvt*.urlLauncher: /usr/share/applications/chromium
+URxvt*perl-ext-common: digital-clock,url-select,matcher,option-popup,selection,font-size
+URxvt*colorUL: #59C272
+
+URxvt*keysym.M-u: perl:url-select:select_next
+URxvt*url-select.launcher: /usr/bin/xdg-open
+URxvt*url-select.underline: true
+! matcher
+URxvt*url-launcher: /usr/bin/xdg-open
+URxvt*matcher.button: 1
+
+! digital clock
+URxvt*digital-clock*foreground: #2C2A29
+URxvt*digital-clock*background: #F95858
+! resize-font - not working
+URxvt.font-size.smaller: C-j
+URxvt.font-size.bigger: C-k
+
+! light calm orange
+URxvt*color1: #E7B85B
+
+! calmer light peach
+URxvt*color2: #E59762
+
+! calm light pink
+!URxvt*color3: #EE7070
+URxvt*color3: #FC4E4E
+
+! light blue-green
+URxvt*color5: #6BD09A
+URxvt*color8: #6BD09A
+
+! calmer light blue
+URxvt*color6: #67D2CF
+
+! calmer darker blue
+URxvt*color7: #2b99c3
+
+! pink
+!URxvt*color4: #ee7a86
+URxvt*color4: $FC4E4E
+
+! light red
+URxvt*color9: #FC4E4E
+
+! green - folders color
+!URxvt*color10: #059450
+!URxvt*color10: #c3b486
+URxvt*color10: #ff7676
+
+! light red
+URxvt*color11: #ff7676
+URxvt*color12: #ff7676
+
+! light brown
+!URxvt*color13: #C9A37d
+URxvt*color13: #f9dbb1
+
+! light green
+URxvt*color14: #9DE3A1
+
+! red
+!URxvt*color15: #F93939
+! darker cream - preview of text
+URxvt*color15: #F0D78B
+
+! light brown-ash
+!URxvt*color16: #C1B694
+URxvt*color16: #f9dbb1
+! sea blue
+URxvt*color17: #22CCB6
+!URxvt.resize-font.smaller: C-down
+!URxvt.resize-font.bigger: C-Up
+!URxvt*transparent: true
+
