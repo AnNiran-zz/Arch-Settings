@@ -9,7 +9,7 @@ local ramgraph_widget = wibox.widget {
         '#93cecb', '#5fdb93'
     },
     display_labels = false,
-    forced_width = 20,
+    forced_width = 30,
     widget = wibox.widget.piechart
 }
 
@@ -32,7 +32,7 @@ w:setup {
         '#789a98',
     },
     display_labels = false,
-    forced_width = 35,
+    forced_width = 25,
     id = 'pie',
     widget = wibox.widget.piechart
 }
