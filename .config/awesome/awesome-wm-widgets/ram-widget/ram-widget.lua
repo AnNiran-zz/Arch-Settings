@@ -6,7 +6,7 @@ local wibox = require("wibox")
 local ramgraph_widget = wibox.widget {
     border_width = 0,
     colors = {
-        '#93cecb', '#5fdb93'
+        '#f2be6e', '#42b874'
     },
     display_labels = false,
     forced_width = 30,
@@ -25,11 +25,12 @@ local w = wibox {
 }
 
 w:setup {
-    border_width = 1,
+    border_width = 0,
     colors = {
-        '#6cc8d0',
-        '#4f979c',
-        '#789a98',
+		'#f66767', -- red
+        --'#48c3ce', -- blue
+        '#2abf77', -- green
+        '#e5bf75', -- orange
     },
     display_labels = false,
     forced_width = 25,

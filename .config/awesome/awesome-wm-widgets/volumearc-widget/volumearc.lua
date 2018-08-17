@@ -25,7 +25,7 @@ local volumearc = wibox.widget {
     start_angle = 4.71238898, -- 2pi*3/4
     forced_height = 22,
     forced_width = 22,
-    bg = "#ffffff11",
+    bg = "#897e72",
     paddings = 2,
     widget = wibox.container.arcchart
 }

@@ -124,10 +124,20 @@ myfilesmenu = {
 		{ "ranger", terminal .. " -e ranger" }
 }
 
+myreadermenu = {
+		{ "pdf", "evince" },
+		{ "djvu", "djview" }
+}
+
+mycalculatemenu = {
+		{ "gnumeric", "gnumeric" }
+}
+
 mymainmenu = awful.menu({ items = { { "web", "chromium" },
 									{ "files", myfilesmenu },
 									{ "editors", myeditorsmenu },
-									{ "slack", "slack" },
+									{ "readers", myreadermenu },
+									{ "calc", mycalculatemenu },
 									{ "monitor", mymonitormenu },
 									{ "awesome", myawesomemenu, beautiful.awesome_icon },
                                     --{ "open terminal", terminal }

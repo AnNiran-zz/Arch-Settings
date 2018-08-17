@@ -9,7 +9,7 @@ local HOME = os.getenv("HOME")
 -- only text
 local text = wibox.widget {
     id = "txt",
-    font = "Source Code Pro 5",
+    font = "Sans 5",
     widget = wibox.widget.textbox
 }
 
@@ -27,7 +27,7 @@ local batteryarc = wibox.widget {
     start_angle = 4.71238898, -- 2pi*3/4
     forced_height = 22,
     forced_width = 22,
-    bg = "#f09d81",
+    bg = "#fb7474",
     paddings = 2,
     widget = wibox.container.arcchart,
     set_value = function(self, value)
@@ -38,7 +38,7 @@ local batteryarc = wibox.widget {
 -- mirror the widget, so that chart value increases clockwise
 local batteryarc_widget = wibox.container.mirror(batteryarc, { horizontal = true })
 
---local last_battery_check = os.time()
+local last_battery_check = os.time()
 
 watch("acpi", 10,
     function(widget, stdout, stderr, exitreason, exitcode)
