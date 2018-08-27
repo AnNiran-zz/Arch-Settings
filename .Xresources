@@ -1,10 +1,10 @@
 ! URxvt Color settings
 URxvt*depth: 32
 !URxvt*foreground: #d2bc9d
-URxvt*foreground: #e7caa1
+URxvt*foreground: #e5c79c
 !URxvt*foreground: #f9dbb1
 URxvt*background: #312f2e
-URxvt*geometry: 120x50
+URxvt*geometry: 110x50
 URxvt*scrollBar: false
 
 URxvt*font: xft:Source Code Pro:size=10
@@ -25,65 +25,56 @@ URxvt*matcher.button: 1
 
 ! digital clock
 URxvt*digital-clock*foreground: #2C2A29
-URxvt*digital-clock*background: #F95858
+URxvt*digital-clock*background: #85b884
 ! resize-font - not working
 URxvt.font-size.smaller: C-j
 URxvt.font-size.bigger: C-k
 
 ! light calm orange
-URxvt*color1: #E7B85B
+URxvt*color1: #e3bb6b
 
 ! calmer light peach
-URxvt*color2: #E59762
+URxvt*color2: #d49062
 
 ! calm light pink
 !URxvt*color3: #EE7070
-URxvt*color3: #FC4E4E
+URxvt*color3: #dfaa87
 
 ! light blue-green
-URxvt*color5: #6BD09A
-URxvt*color8: #6BD09A
+URxvt*color5: #57ae9e
+URxvt*color8: #57ae9e
 
 ! calmer light blue
-URxvt*color6: #67D2CF
+URxvt*color6: #569491
 
 ! calmer darker blue
-URxvt*color7: #2b99c3
+URxvt*color7: #3f7471
 
 ! pink
 !URxvt*color4: #ee7a86
-URxvt*color4: $FC4E4E
+URxvt*color4: $85b884
 
-! light red
-URxvt*color9: #FC4E4E
+! light red - files
+URxvt*color9: #a19079
 
 ! green - folders color
-!URxvt*color10: #059450
-!URxvt*color10: #c3b486
-URxvt*color10: #ff7676
+URxvt*color10: #c5ad8b
 
 ! light red
-URxvt*color11: #ff7676
-URxvt*color12: #ff7676
+URxvt*color11: #7ba57a
+URxvt*color12: #7ba57a
 
 ! light brown
-!URxvt*color13: #C9A37d
-URxvt*color13: #f9dbb1
+URxvt*color13: #d2b68f
 
 ! light green
-URxvt*color14: #9DE3A1
+URxvt*color14: #72a79e
 
 ! red
 !URxvt*color15: #F93939
 ! darker cream - preview of text
-URxvt*color15: #F0D78B
+URxvt*color15: #d6c798
 
 ! light brown-ash
 !URxvt*color16: #C1B694
-URxvt*color16: #f9dbb1
-! sea blue
-URxvt*color17: #22CCB6
-!URxvt.resize-font.smaller: C-down
-!URxvt.resize-font.bigger: C-Up
-!URxvt*transparent: true
-
+URxvt*color16: #d4bb97

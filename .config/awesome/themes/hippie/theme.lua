@@ -8,7 +8,9 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = "/home/anna/.config/awesome/themes/hippie/colorful-wallpaper.jpg"
+--theme.wallpaper = "/home/anna/.config/awesome/themes/hippie/colorful-wallpaper.jpg"
+theme.wallpaper
+="/home/anna/.config/awesome/themes/hippie/forest-fever-0192-darker.png"
 -- }}
 
 -- {{{ Styles

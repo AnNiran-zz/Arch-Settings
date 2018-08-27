@@ -49,6 +49,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/home/anna/.config/awesome/themes/hippie/theme.lua")
+--beautiful.init("/usr/local/share/icons/Papirus")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -120,8 +121,13 @@ myeditorsmenu = {
 }
 
 myfilesmenu = {
-		{ "nemo", "nemo" },
-		{ "ranger", terminal .. " -e ranger" }
+		{ "ranger", terminal .. " -e ranger" },
+		{ "nemo", "nemo" }
+}
+
+myterminalmenu = {
+		{ "urxvt", "urxvt" },
+		{ "terminator", "terminator" },
 }
 
 myreadermenu = {
@@ -139,6 +145,7 @@ mymainmenu = awful.menu({ items = { { "web", "chromium" },
 									{ "readers", myreadermenu },
 									{ "calc", mycalculatemenu },
 									{ "monitor", mymonitormenu },
+									{ "terminal", myterminalmenu },
 									{ "awesome", myawesomemenu, beautiful.awesome_icon },
                                     --{ "open terminal", terminal }
                                   }
@@ -608,3 +615,14 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+do
+	local cmds =
+	{
+		terminal .. " -e ranger",
+		"urxvt"
+	}
+
+	for _, i in pairs(cmds) do
+		awful.util.spawn(i)
+	end
+end

@@ -1,4 +1,5 @@
-source /usr/share/vim/vimfiles/colors/anniran_hippie_1.vim
+"source /usr/share/vim/vimfiles/colors/anniran_hippie_1.vim
+source /usr/share/vim/vimfiles/colors/boho2.vim
 
 syntax on
 set number
