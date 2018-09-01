@@ -130,6 +130,17 @@ myterminalmenu = {
 		{ "terminator", "terminator" },
 }
 
+mymusicmenu = {
+		{ "vlc", "vlc" },
+}
+
+mydualmonitormenu = {
+		{ "connect right", terminal .. " -e xrandr --output eDP1 --auto --output HDMI1 --mode 3840x2160 --right-of eDP1" },
+		{ "connect left", terminal .. " -e xrandr --output eDP1 --auto --output HDMI1 --mode 3840x2160 --left-of eDPI1" },
+		{ "connect up", terminal .. " -e xrandr --output eDPI1 --auto --output HDMI1 --mode 3840x2160 --above eDPI1" },
+		{ "disconnect", terminal .. " -e xrandr --output HDMI1 --off" },
+}
+
 myreadermenu = {
 		{ "pdf", "evince" },
 		{ "djvu", "djview" }
@@ -139,6 +150,9 @@ mycalculatemenu = {
 		{ "gnumeric", "gnumeric" }
 }
 
+mysettingsmenu = {
+		{ "apply Xresources", terminal .. " -e xrdb -merge ~/.Xresources" }
+}
 mymainmenu = awful.menu({ items = { { "web", "chromium" },
 									{ "files", myfilesmenu },
 									{ "editors", myeditorsmenu },
@@ -146,6 +160,10 @@ mymainmenu = awful.menu({ items = { { "web", "chromium" },
 									{ "calc", mycalculatemenu },
 									{ "monitor", mymonitormenu },
 									{ "terminal", myterminalmenu },
+									{ "music", mymusicmenu },
+									{ "download", "transmission-gtk" },
+									{ "dual monitor", mydualmonitormenu },
+									{ "settings", mysettingsmenu },
 									{ "awesome", myawesomemenu, beautiful.awesome_icon },
                                     --{ "open terminal", terminal }
                                   }
